@@ -86,3 +86,17 @@ public class Main{
                     System.out.println("Total Marks    : " + totalMarks);
                     System.out.println("Average Marks  : " + average);
 					break;
+					case 5:
+				
+					 System.out.println("\nExiting the system. Thank you!");
+                    break;
+					
+				default :
+					System.out.println("\nInvalid Input. Plrase Enter  a valid choice between 1and 5. ");
+					
+			}	
+			
+		}while(choice!=5);
+
+	}
+}
