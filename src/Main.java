@@ -72,3 +72,17 @@ public class Main{
 						
 					}
 					break;
+				case 4:
+					 System.out.println("4.Calculate Average Marks");
+					 
+					 double totalMarks=0;
+					 
+					 for(Student s: studentList){
+						 totalMarks=totalMarks+ s.getMarks(); 
+					 }
+					 double average=totalMarks/studentList.size();
+					 
+					 System.out.println("Total Students : " + studentList.size());
+                    System.out.println("Total Marks    : " + totalMarks);
+                    System.out.println("Average Marks  : " + average);
+					break;
