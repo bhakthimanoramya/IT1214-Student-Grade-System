@@ -42,3 +42,33 @@ public class Main{
 					
 					System.out.println("Student record added successfully!");
 					break;
+						
+				case 2:
+					System.out.println("********");
+					System.out.println("2.View All Student REcords");
+					 
+					for(Student s : studentList){
+						System.out.println("Student ID :"+ s.getStudentID() +" Student Name : "+ s.getStudentName() +" Student Marks : "+s.getMarks());	
+					}
+					System.out.println("Total Students : "+ studentList.size());
+					break;
+				
+				case 3:
+					System.out.println("3.Search Student using ID");
+					
+					System.out.println("Enter StudentID To Search  :");
+					int stID=sc2.nextInt();
+					
+					for(Student s: studentList){
+						if(s.getStudentID()==stID){
+							System.out.println("\nStudent Found");
+							System.out.println("ID  :"+s.getStudentID());
+							System.out.println("Name  :"+s.getStudentName());
+							System.out.println("Marks  :"+s.getMarks());
+							break;
+						}else{
+							System.out.println("Student With ID :"+ stID + "NOt Found");
+						}
+						
+					}
+					break;
